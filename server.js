@@ -20,8 +20,8 @@ const db = connectDB();
 app.use('/api/todo/auth', userRoutes(db));
 app.use('/api/todo', todoRoutes(db));
 
-// const PORT = process.env.PORT || 3000;
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+//const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
